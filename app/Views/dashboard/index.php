@@ -49,27 +49,6 @@ require __DIR__ . '/../layouts/header.php';
     </div>
 </div>
 
-<div class="card border-0 shadow-sm">
-    <div class="card-body">
-        <h2 class="h5">Últimos atendimentos</h2>
-        <p class="text-secondary">Consumido de <code>?controller=dashboard&amp;action=resumo</code>.</p>
-        <div class="table-responsive">
-            <table class="table table-sm align-middle mb-0">
-                <thead class="table-light">
-                    <tr>
-                        <th>Pessoa</th>
-                        <th>Tipo</th>
-                        <th>Data</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody id="tabelaRecentes">
-                    <tr><td colspan="4" class="text-center py-3">Carregando...</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
