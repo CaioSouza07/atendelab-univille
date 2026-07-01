@@ -1,0 +1,98 @@
+:root {
+  --atendelab-blue: #0d6efd;
+  --atendelab-blue-dark: #0b5ed7;
+  --atendelab-blue-darker: #0a58ca;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.login-card {
+  width: min(100%, 430px);
+}
+
+.brand-mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--atendelab-blue);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/*
+  O projeto usa as classes utilitárias "success" do Bootstrap (bg-success,
+  btn-success, btn-outline-success, text-bg-success, alert-success) como cor
+  de marca. Em vez de editar cada view, sobrescrevemos essas classes aqui
+  para usar a paleta azul, mantendo o HTML/JS existentes intactos.
+*/
+
+/* Navbar e fundos sólidos */
+.bg-success {
+  background-color: var(--atendelab-blue) !important;
+}
+
+/* Botões preenchidos */
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--atendelab-blue);
+  --bs-btn-border-color: var(--atendelab-blue);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--atendelab-blue-dark);
+  --bs-btn-hover-border-color: var(--atendelab-blue-darker);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--atendelab-blue-darker);
+  --bs-btn-active-border-color: var(--atendelab-blue-darker);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--atendelab-blue);
+  --bs-btn-disabled-border-color: var(--atendelab-blue);
+}
+
+/* Botões outline */
+.btn-outline-success {
+  --bs-btn-color: var(--atendelab-blue);
+  --bs-btn-border-color: var(--atendelab-blue);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--atendelab-blue);
+  --bs-btn-hover-border-color: var(--atendelab-blue);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--atendelab-blue);
+  --bs-btn-active-border-color: var(--atendelab-blue);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--atendelab-blue);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--atendelab-blue);
+}
+
+/* Badges/etiquetas de status (ex.: "ativo") */
+.text-bg-success {
+  color: #fff !important;
+  background-color: var(--atendelab-blue) !important;
+}
+
+/* Alertas de sucesso */
+.alert-success {
+  --bs-alert-color: #084298;
+  --bs-alert-bg: #cfe2ff;
+  --bs-alert-border-color: #b6d4fe;
+  --bs-alert-link-color: #06357a;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+textarea {
+  resize: vertical;
+}
